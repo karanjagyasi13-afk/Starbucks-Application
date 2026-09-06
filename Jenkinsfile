@@ -29,8 +29,8 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker') {
-                        sh "docker tag starbucks vikas4cloud/starbucks:latest"
-                        sh "docker push vikas4cloud/starbucks:latest"
+                        sh "docker tag starbucks karanjagyasi13/starbucks:latest"
+                        sh "docker push karanjagyasi13/starbucks:latest"
                     }
                 }
             }
